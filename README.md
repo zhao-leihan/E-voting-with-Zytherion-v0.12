@@ -46,7 +46,6 @@ This version is still in active development and should be used for **educational
 
 **v0.12 - July 2025**
 - Refactored mining mechanism to generate `.zyth` binary block files
-- Integrated Homomorphic Encryption backend (Go/HElib-ready)
 - Added preliminary support for Zero-Knowledge Proof (ZKP) verification per vote
 - Moved towards P2P support using Rust nodes (under construction)
 - Introduced PoW difficulty adjustment similar to Bitcoin
