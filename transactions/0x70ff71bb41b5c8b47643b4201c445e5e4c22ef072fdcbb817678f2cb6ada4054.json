@@ -1,0 +1,10 @@
+{
+    "tx_hash": "0x70ff71bb41b5c8b47643b4201c445e5e4c22ef072fdcbb817678f2cb6ada4054",
+    "from": "0xabbbbc5d40e263330edd3043ae65d896f8d3df961c3f554c161cbabea1319dc6",
+    "to": "0xcddac49671ff484a63bae1ab2db6e44b8a3e6305895c1c4221fc97da39f25a03",
+    "amount": 0.9615504112022294,
+    "timestamp": 1745539871.4715424,
+    "gas_fee": 0.001,
+    "voting_fee": 0.9615504112022294,
+    "status": "Success"
+}

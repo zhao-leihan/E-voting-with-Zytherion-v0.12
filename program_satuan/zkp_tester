@@ -1,0 +1,27 @@
+from py_ecc.bn128 import G1, multiply, eq
+
+class ZKP:
+    def __init__(self):
+        self.generator = G1  # Generator point on the elliptic curve
+
+    def generate_proof(self, secret):
+        # Generate a random number as the private key
+        private_key = secret
+        public_key = multiply(self.generator, private_key)
+        return private_key, public_key
+
+    def verify_proof(self, public_key, proof):
+        # Verify that the proof matches the public key
+        return eq(proof, public_key)
+
+# Contoh penggunaan:
+if __name__ == "__main__":
+    zkp = ZKP()
+    secret = 123456789  # Ganti dengan nilai rahasia yang Anda inginkan
+    private_key, public_key = zkp.generate_proof(secret)
+    print(f"Private Key: {private_key}")
+    print(f"Public Key: {public_key}")
+
+    # Cek verifikasi
+    is_verified = zkp.verify_proof(public_key, public_key)
+    print(f"Is proof verified? {is_verified}")
